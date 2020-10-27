@@ -1,0 +1,24 @@
+.section-2 {
+    width:100%;
+    height:25rem; /* istället för 400px */
+    position:relative;
+    border:1px solid green;
+}
+
+/* behövs den här? */
+
+.section-2::before {
+    content: '';
+    display:block;
+    padding-top: 50.25%;
+}
+
+.section-2 video {
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    object-fit: cover;   /* Funkar kanske inte på alla webbläsare? */
+
+}
