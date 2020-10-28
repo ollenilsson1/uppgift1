@@ -1,0 +1,35 @@
+/* TIP OF THE WEEK */
+
+.section-5 {
+    position: relative;
+    border:1px solid green;
+}
+
+.img-section5 {
+    width:100%;
+    
+}
+
+.text-section5 {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-section5 p {
+    font-family:sans-serif;
+    font-size:1.18rem;
+    letter-spacing: 0.05rem;
+    font-weight: 100;
+    color:#808080;
+    line-height:1.6rem;
+}
+
+
+
+/*   För att få det centrerat  
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */

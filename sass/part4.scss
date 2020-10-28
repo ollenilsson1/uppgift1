@@ -1,0 +1,24 @@
+/* paragrafen under andra mobil-bilden */
+.section-4 {
+    border:1px solid red;
+}
+
+.section-4 > p {
+    text-align:left;
+    font-family:sans-serif;
+    font-size:1.18rem;
+    letter-spacing: 0.05rem;
+    font-weight: 100;
+    color:#808080;
+    line-height:1.6rem;
+    position: relative;
+    left:16%;
+ 
+}
+
+.section-4>p>strong {
+    font-family:sans-serif;
+    font-size:1.18rem;
+    color:#808080;
+    font-weight: 600;
+}
