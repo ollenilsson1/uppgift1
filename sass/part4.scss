@@ -1,9 +1,10 @@
 /* paragrafen under andra mobil-bilden */
 .section-4 {
+    padding:3rem;
     border:1px solid red;
 }
 
-.section-4 > p {
+.section-4 p {
     text-align:left;
     font-family:sans-serif;
     font-size:1.18rem;
@@ -16,7 +17,7 @@
  
 }
 
-.section-4>p>strong {
+.section-4 strong {
     font-family:sans-serif;
     font-size:1.18rem;
     color:#808080;

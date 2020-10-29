@@ -11,10 +11,12 @@ body {
     background-color:#404040;
 }
 
-/* för att få det att se ut som ett nyhetsbrev */
+/* för att få det att se ut som ett nyhetsbrev 
+Borde vara 1010px från max till 1000px gör den till 90% av sidan */
 
 .container {
-    width:80%;
+    width: 80%;
+    max-width: 1000px;
     margin:auto;
     background-color:white;
     padding:10px;

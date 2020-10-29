@@ -10,9 +10,11 @@
 body {
   background-color: #404040; }
 
-/* för att få det att se ut som ett nyhetsbrev */
+/* för att få det att se ut som ett nyhetsbrev 
+Borde vara 1010px från max till 1000px gör den till 90% av sidan */
 .container {
   width: 80%;
+  max-width: 1000px;
   margin: auto;
   background-color: white;
   padding: 10px; }
@@ -63,58 +65,52 @@ h2 {
   left: 13%;
   bottom: 5.9rem; }
 
-/* Section 1 - Paragraf och första bilden */
+/* Section 1 - Paragraf och första bilden. Parent*/
 .section-1 {
   width: 100%;
   height: 50rem;
   /* istället för 800px */
   margin: auto;
+  position: relative;
   border: 1px solid red; }
 
 .text-section1 {
   width: 40%;
-  position: relative;
-  top: 60px;
-  left: 10%;
-  border: 1px solid purple; }
+  position: absolute;
+  left: 10%; }
 
-.h3-section1 {
-  font-family: sans-serif;
-  font-weight: 900;
-  font-size: 1.5rem; }
-
-.p-section1 {
+.text-section1 p {
   font-family: sans-serif;
   font-size: 1.18rem;
   letter-spacing: 0.05rem;
   font-weight: 100;
   color: #808080;
-  line-height: 1em; }
+  line-height: 1em;
+  border: 1px solid purple; }
 
-.p-section1 > strong {
+.text-section1 > p > strong {
   font-family: sans-serif;
   font-size: 1.18rem;
   color: #808080;
   font-weight: 600; }
 
+.text-section1 h3 {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 900;
+  font-size: 1.5rem; }
+
+/* För bilden till höger, Child 2 */
 .fig-section1 {
-  position: relative;
+  position: absolute;
   width: 40%;
   border: 2px dotted green;
   left: 50%;
-  bottom: 31rem; }
+  top: 0; }
 
-img {
+.fig-section1 img {
   width: 100%; }
 
-/* // .img-section1 {
-//     width:100%;
-//     position: relative;
-//     left:45%;
-//     bottom:500px;
-//     border:1px solid blue;
-    
-// } */
 .section-2 {
   width: 100%;
   height: 25rem;
@@ -143,12 +139,6 @@ img {
   position: relative;
   border: 1px solid hotpink; }
 
-/* Behövs den här? */
-.section-3::before {
-  content: '';
-  display: block;
-  padding-top: 50.25%; }
-
 .section-3 img {
   width: 60%;
   position: absolute;
@@ -157,22 +147,20 @@ img {
   border: 1px solid green; }
 
 .section-3 p {
-  width: 50%;
-  height: 100%;
-  position: absolute;
-  top: 11%;
-  right: 5%; }
-
-.p-section3 {
   text-align: right;
   font-family: sans-serif;
   font-size: 1.18rem;
   letter-spacing: 0.05rem;
   font-weight: 100;
   color: #808080;
-  line-height: 1.6rem; }
+  line-height: 1.6rem;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 11%;
+  right: 5%; }
 
-.p-section3 > strong {
+.section-3 strong {
   font-family: sans-serif;
   font-size: 1.18rem;
   color: #808080;
@@ -180,9 +168,10 @@ img {
 
 /* paragrafen under andra mobil-bilden */
 .section-4 {
+  padding: 3rem;
   border: 1px solid red; }
 
-.section-4 > p {
+.section-4 p {
   text-align: left;
   font-family: sans-serif;
   font-size: 1.18rem;
@@ -193,7 +182,7 @@ img {
   position: relative;
   left: 16%; }
 
-.section-4 > p > strong {
+.section-4 strong {
   font-family: sans-serif;
   font-size: 1.18rem;
   color: #808080;
@@ -202,6 +191,7 @@ img {
 /* TIP OF THE WEEK */
 .section-5 {
   position: relative;
+  padding-top: 5rem;
   border: 1px solid green; }
 
 .img-section5 {
