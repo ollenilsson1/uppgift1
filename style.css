@@ -218,10 +218,20 @@ h2 {
     transform: translate(-50%,-50%); */
 footer {
   background-color: #2b2e34;
-  border: 1px solid yellow; }
+  border: 1px solid yellow;
+  display: flex; }
 
 .text1-footer {
-  color: #fff; }
+  color: #fff;
+  text-align: center;
+  padding: 3rem;
+  width: 50%;
+  margin-left: auto; }
 
 .text2-footer {
-  color: #fff; }
+  color: white;
+  text-align: center;
+  padding-top: 5.5rem;
+  width: 50%;
+  margin-right: auto;
+  border: 1px solid green; }
