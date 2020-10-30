@@ -179,8 +179,8 @@ h2 {
   font-weight: 100;
   color: #808080;
   line-height: 1.6rem;
-  position: relative;
-  left: 16%; }
+  width: 80%;
+  margin: 0 auto; }
 
 .section-4 strong {
   font-family: sans-serif;
@@ -222,14 +222,12 @@ footer {
   display: flex; }
 
 .text1-footer {
-  color: #fff;
   text-align: center;
   padding: 3rem;
   width: 50%;
   margin-left: auto; }
 
 .text2-footer {
-  color: white;
   text-align: center;
   padding-top: 5.5rem;
   width: 50%;
